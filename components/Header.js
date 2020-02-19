@@ -5,7 +5,7 @@ function IndexPage() {
   return (
     <Fragment>
       <Head>
-        <title>The Restaurant</title>
+        <title>Heavenly Desserts</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"

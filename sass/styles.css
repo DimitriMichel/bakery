@@ -994,7 +994,7 @@ nav a {
 #Contact h6 {
   font-size: 0.9rem;
   font-weight: 600;
-  color: gray;
+  color: darkslategrey;
   line-height: 1.6rem;
 }
 #Contact p {
@@ -1029,6 +1029,7 @@ nav a {
 #Contact p {
   font-weight: 300;
   margin: 0;
+  color: #191919;
 }
 #Contact h6 {
   margin: 0;

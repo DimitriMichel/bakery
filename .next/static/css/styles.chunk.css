@@ -408,12 +408,15 @@ header {
   padding: 0;
   width: 100%; }
 
+.nav-container {
+  padding-top: 5px; }
+
 nav {
   margin: 0 auto;
   background-color: white;
   text-align: center;
   max-width: 500px;
-  border-radius: 0 0 3px 3px;
+  border-radius: 3px;
   padding: 0 1px 0 1px;
   font-size: 1.3rem; }
   @media only screen and (max-width: 768px) {

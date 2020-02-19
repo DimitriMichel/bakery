@@ -1035,53 +1035,60 @@ const Navigation = () => {
     },
     __self: undefined
   }, __jsx("div", {
-    className: "container",
+    className: "nav-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: undefined
-  }, __jsx("header", {
+  }, __jsx("div", {
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: undefined
-  }), __jsx("nav", {
+  }, __jsx("header", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
+    },
+    __self: undefined
+  }), __jsx("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: undefined
   }, "Our Story"), __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: undefined
   }, "Specials"), __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: undefined
   }, "Reviews"), __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: undefined
-  }, "Contact"))));
+  }, "Contact")))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (Navigation);
 

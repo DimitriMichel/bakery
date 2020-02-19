@@ -547,7 +547,6 @@ a {
 }
 a:hover {
   color: #A1CCC8;
-  text-decoration: underline #A1CCC8;
 }
 
 a[href^=tel] {

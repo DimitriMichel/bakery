@@ -17,6 +17,13 @@ a
   &:hover
     color: #A1CCC8
     text-decoration: underline #A1CCC8
+
+a[href^="tel"]
+  color: white
+  text-decoration: none
+
+
+
 h5
   color: gray
   font-size: 1.1rem
@@ -61,7 +68,7 @@ body
 
 // ***HERO*** //
 #Hero
-  height: 600px
+  height: 98.5vh
   width: 100%
   background-image: linear-gradient(90deg,rgba(0,0,0,0) 1%,#000 6000%),url(../public/static/images/manwomanHero.jpg)
   background-position: center
@@ -73,6 +80,8 @@ body
   border-radius:  3px
   margin-top: 5px
   position: relative
+  @media only screen and (max-width: 768px)
+    background-attachment: initial
   h5
     text-transform: uppercase
     color: white
@@ -186,8 +195,6 @@ nav
     background-repeat: no-repeat
     -moz-background-size: cover
     border-radius:  4px
-    @media only screen and (max-width: 768px)
-      background-attachment: fixed
 
 
 

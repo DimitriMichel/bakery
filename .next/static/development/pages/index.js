@@ -14297,7 +14297,7 @@ var xAxisVariantsSlower = {
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fdimitripl%2FDocuments%2FProject5%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************/
@@ -14320,5 +14320,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]);
+},[[6,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

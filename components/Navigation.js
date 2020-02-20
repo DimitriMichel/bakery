@@ -8,10 +8,10 @@ export const Navigation = () => {
           <header></header>
 
           <nav>
-            <a href="#">Our Story</a>
-            <a href="#">Specials</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact</a>
+            <a href="#OurStory">Our Story</a>
+            <a href="#Menu">Specials</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#Contact">Contact</a>
           </nav>
         </div>
       </div>

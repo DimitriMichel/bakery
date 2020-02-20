@@ -7,12 +7,13 @@ import LargeQuote from "../components/LargeQuote";
 import Contact from "../components/Contact";
 import Reviews from "../components/Reviews";
 import Footer from "../components/Footer";
-import { Html } from "next/document";
+
 
 function HomePage() {
   return (
     <Fragment>
         <Header />
+
         <Hero />
         <OurStory />
         <Menu />

@@ -12,10 +12,7 @@ $footerBG: #5C84B2
 $black : #191919
 $white : #F4F4F4
 //**Styling**//
-a
-  transition: all .1s ease-in-out
-  &:hover
-    color: #A1CCC8
+
 
 a[href^="tel"]
   color: white
@@ -141,10 +138,14 @@ header
 .nav-container
   padding-top: 5px
 nav
+  a
+    transition: all .1s ease-in-out
+    &:hover
+      color: #A1CCC8
   margin: 0 auto
   background-color: white
   text-align: center
-  max-width: 500px
+  max-width: 400px
   border-radius: 3px
   padding: 0 1px 0 1px
   font-size: 1.3rem
@@ -154,6 +155,7 @@ nav
   a
     display: inline-block
     justify-content: space-between
+    font-family: $titleFont
 
     color: black
     text-decoration: none
@@ -198,26 +200,57 @@ nav
     -moz-background-size: cover
     border-radius:  4px
 
+.reservation
+  max-width: 700px
+  display: flex
+  @media screen and (max-width: 768px)
+    text-align: center
+    display: inline-block
+    margin-right: 50%
+    width: 100%
 
-
-
-
-.res-btn
+.reservation-button
+  flex: 1
+input
   font-family: $buttonText
   display: inline-block
-  padding: 20px 40px
-  width: 200px
+  padding: 25px 40px
+  width: 250px
+  margin: .5rem
   border: 1px solid black
   text-align: center
   text-decoration: none
   color: black
   text-transform: uppercase
-  margin: .5rem 0 3rem 1rem
   border-radius: 4px
-  transition: all .3s ease
-  &:hover
-    background: #E7D2E5
-    color: white
+  overflow: hidden
+  cursor: pointer
+  @media screen and (max-width: 768px)
+    float: none
+    border: 1px solid #000
+
+.res-btn
+  cursor: pointer
+  font-family: $buttonText
+  display: inline-block
+  padding: 23px 40px
+  width: 250px
+  margin: .5rem
+  border: 1px solid black
+  text-align: center
+  text-decoration: none
+  color: black
+  text-transform: uppercase
+  border-radius: 4px
+.confirmed
+  background-color: #21A179
+  transition: all .2s ease
+  color: white
+  @media screen and (max-width: 768px)
+    margin-bottom: 5rem
+    float: none
+
+
 
 #Menu
   background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/absurdidad.png")
@@ -347,9 +380,9 @@ nav
       margin: 20px auto 0 auto
 
 
-
 #Reviews
   text-align: right
+
   @media only screen and (max-width: 768px)
     text-align: initial
   .review-image

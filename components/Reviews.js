@@ -4,25 +4,20 @@ import { useInView, InView } from "react-intersection-observer";
 
 /*Framer Motion*/
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  yAxisVariants,
-  xAxisVariants,
-  yAxisVariantsSlow,
-  yAxisVariantsSlower,
-  yAxisVariantsSlowest,
-  xAxisVariantsSlow,
-  xAxisVariantsSlower,
-  xAxisVariantsSlowFromRight
-} from "../utils/animConfig";
+import { xAxisVariantsSlowFromRight } from "../utils/animConfig";
 
 export const Reviews = props => {
+
   const [ref, inView, entry] = useInView({
     /* Optional options */
     threshold: 0
   });
+
+
   return (
     <AnimatePresence>
       <section id="Reviews">
+        <a id="Reviews"> </a>
         <motion.div
           className="container"
           initial="exit"
@@ -62,7 +57,7 @@ export const Reviews = props => {
                             Medalist (Baking)
                           </div>
                           <div className="arrows">
-                            <i className="fas fa-arrow-left"> </i>
+                              <i className="fas fa-arrow-left"> </i>
                             <i className="fas fa-arrow-right ready"> </i>
                           </div>
                         </div>

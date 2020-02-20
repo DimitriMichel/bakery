@@ -16,6 +16,7 @@ export const Menu = props => {
   return (
     <AnimatePresence>
       <section id="Menu">
+        <a id="Menu"> </a>
         <div className="container">
           <motion.div
             className="title-animation"

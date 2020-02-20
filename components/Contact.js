@@ -4,6 +4,7 @@ import React from "react";
 export const Contact = props => {
   return (
     <section id="Contact">
+      <a id="Contact"> </a>
       <div className="container">
         <div className="map-and-contact">
           <div className="get-in-touch">

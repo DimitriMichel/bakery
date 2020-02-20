@@ -542,13 +542,6 @@
   }
 }
 /***VARIABLES***/
-a {
-  transition: all 0.1s ease-in-out;
-}
-a:hover {
-  color: #A1CCC8;
-}
-
 a[href^=tel] {
   color: white;
   text-decoration: none;
@@ -687,10 +680,16 @@ nav {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 3px;
   padding: 0 1px 0 1px;
   font-size: 1.3rem;
+}
+nav a {
+  transition: all 0.1s ease-in-out;
+}
+nav a:hover {
+  color: #A1CCC8;
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -701,6 +700,7 @@ nav {
 nav a {
   display: inline-block;
   justify-content: space-between;
+  font-family: "Playfair Display", sans-serif;
   color: black;
   text-decoration: none;
   padding: 5px 6px;
@@ -746,23 +746,70 @@ nav a {
   border-radius: 4px;
 }
 
-.res-btn {
+.reservation {
+  max-width: 700px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .reservation {
+    text-align: center;
+    display: inline-block;
+    margin-right: 50%;
+    width: 100%;
+  }
+}
+
+.reservation-button {
+  flex: 1;
+}
+
+input {
   font-family: "Open Sans" sans-serif;
   display: inline-block;
-  padding: 20px 40px;
-  width: 200px;
+  padding: 25px 40px;
+  width: 250px;
+  margin: 0.5rem;
   border: 1px solid black;
   text-align: center;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  margin: 0.5rem 0 3rem 1rem;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
-.res-btn:hover {
-  background: #E7D2E5;
+@media screen and (max-width: 768px) {
+  input {
+    float: none;
+    border: 1px solid #000;
+  }
+}
+
+.res-btn {
+  cursor: pointer;
+  font-family: "Open Sans" sans-serif;
+  display: inline-block;
+  padding: 23px 40px;
+  width: 250px;
+  margin: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.confirmed {
+  background-color: #21A179;
+  transition: all 0.2s ease;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .confirmed {
+    margin-bottom: 5rem;
+    float: none;
+  }
 }
 
 #Menu {

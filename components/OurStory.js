@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useInView, InView } from "react-intersection-observer";
+import DatePicker from "react-datepicker/";
+import setHours from "date-fns/setSeconds";
+import setMinutes from "date-fns/setMinutes";
 
 /*Framer Motion*/
 import { AnimatePresence, motion } from "framer-motion";
@@ -8,10 +11,16 @@ import {
   xAxisVariants,
   yAxisVariantsSlow,
   yAxisVariantsSlower,
-  yAxisVariantsSlowest, xAxisVariantsSlow
+  yAxisVariantsSlowest,
+  xAxisVariantsSlow
 } from "../utils/animConfig";
 
 export const OurStory = props => {
+  const [startDate, setStartDate] = useState(
+    setHours(setMinutes(new Date(), 60), 17)
+  );
+  const [clicked, setClicked] = useState(false);
+
   const [ref, inView, entry] = useInView({
     /* Optional options */
     threshold: 0
@@ -19,6 +28,7 @@ export const OurStory = props => {
   return (
     <AnimatePresence>
       <section id="OurStory">
+        <a id="OurStory"> </a>
         <motion.div
           className="container"
           initial="exit"
@@ -57,7 +67,7 @@ export const OurStory = props => {
                     <div ref={ref}>
                       <div>
                         {inView ? (
-                          <motion.div  variants={xAxisVariantsSlow}>
+                          <motion.div variants={xAxisVariantsSlow}>
                             <p>
                               Dr. Alan Hirsch, a neurologist who studies
                               olfactory-evoked nostalgia, has found that smells
@@ -68,16 +78,38 @@ export const OurStory = props => {
                               ingredients, baking powder and baking soda make it
                               rise, the melted fats like butter and oil make it
                               less chewy, and sugar sweetens and keeps it moist.
-                              Any system can function only if all it's parts do
-                              their job. The same principle applies to baking.
                             </p>
                             <div className="quote">
                               <i>"The absolute final word in dessert."</i> -{" "}
                               <strong>Michael Harding</strong> (Master Baker)
                             </div>
-                            <a href="#" className="res-btn">
-                              Reserve
-                            </a>
+                            <div className="reservation">
+                              <div className="datpicker">
+                                <DatePicker
+                                  selected={startDate}
+                                  onChange={date => setStartDate(date)}
+                                  showTimeSelect
+                                  minTime={setHours(
+                                    setMinutes(new Date(), 0),
+                                    17
+                                  )}
+                                  maxTime={setHours(
+                                    setMinutes(new Date(), 400),
+                                    20
+                                  )}
+                                  dateFormat="MMMM d, yyyy h:mm aa"
+                                />
+                              </div>
+                              {!clicked ? (
+                                <div className="reservation-button">
+                                  <a  onClick={() => setClicked(true)} className="res-btn">Reserve</a>
+                                </div>
+                              ) : (
+                                <div className="reservation-button">
+                                  <a onClick={() => setClicked(false)} className="res-btn confirmed">Reserved</a>
+                                </div>
+                              )}
+                            </div>
                           </motion.div>
                         ) : (
                           <div> </div>

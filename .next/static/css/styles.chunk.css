@@ -500,22 +500,18 @@ input {
   display: inline-block;
   padding: 23px 40px;
   width: 250px;
-  margin: .5rem;
   border: 1px solid black;
   text-align: center;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin: .5rem .5rem 60px; }
 
 .confirmed {
   background-color: #21A179;
   transition: all .2s ease;
   color: white; }
-  @media screen and (max-width: 768px) {
-    .confirmed {
-      margin-bottom: 5rem;
-      float: none; } }
 
 #Menu {
   background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/absurdidad.png");

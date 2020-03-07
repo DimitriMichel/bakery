@@ -336,7 +336,7 @@ body {
 #Hero {
   height: 98.5vh;
   width: 100%;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, #000 6000%), url(/_next/static/images/manwomanHero-e626409686e5966831a38f5708095b72.jpg);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, #000 6000%), url(/_next/static/images/manwomanHero-2d9053e22c9ab892dca14938f995c1cb.jpg);
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -474,6 +474,9 @@ nav {
 
 .reservation-button {
   flex: 1; }
+  @media screen and (max-width: 1093px) {
+    .reservation-button {
+      width: 200px; } }
 
 input {
   font-family: "Open Sans" sans-serif;
@@ -493,6 +496,9 @@ input {
     input {
       float: none;
       border: 1px solid #000; } }
+  @media screen and (max-width: 1093px) {
+    input {
+      width: 200px; } }
 
 .res-btn {
   cursor: pointer;
@@ -671,6 +677,9 @@ input {
     @media only screen and (max-width: 768px) {
       #Contact .get-in-touch {
         margin-bottom: 20px; } }
+    @media only screen and (max-width: 1094px) {
+      #Contact .get-in-touch {
+        margin-bottom: 0; } }
   @media only screen and (max-width: 768px) {
     #Contact {
       position: initial; } }
@@ -688,6 +697,13 @@ input {
       font-family: "Playfair Display", sans-serif;
       margin-bottom: 2.3rem; }
     @media only screen and (max-width: 768px) {
+      #Contact .box {
+        position: initial;
+        bottom: initial;
+        margin: initial;
+        left: initial;
+        transform: initial; } }
+    @media only screen and (max-width: 1094px) {
       #Contact .box {
         position: initial;
         bottom: initial;

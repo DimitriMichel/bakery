@@ -211,6 +211,8 @@ nav
 
 .reservation-button
   flex: 1
+  @media screen and (max-width: 1093px)
+    width: 200px
 input
   font-family: $buttonText
   display: inline-block
@@ -228,6 +230,10 @@ input
   @media screen and (max-width: 768px)
     float: none
     border: 1px solid #000
+  @media screen and (max-width: 1093px)
+    width: 200px
+
+
 
 .res-btn
   cursor: pointer
@@ -420,8 +426,11 @@ input
     margin-bottom: 200px
     @media only screen and (max-width: 768px)
       margin-bottom: 20px
+    @media only screen and (max-width: 1094px)
+      margin-bottom: 0
   @media only screen and (max-width: 768px)
     position: initial
+
 
   .box
     padding: 30px
@@ -437,6 +446,12 @@ input
       font-family: $titleFont
       margin-bottom: 2.3rem
     @media only screen and (max-width: 768px)
+      position: initial
+      bottom: initial
+      margin: initial
+      left: initial
+      transform: initial
+    @media only screen and (max-width: 1094px)
       position: initial
       bottom: initial
       margin: initial

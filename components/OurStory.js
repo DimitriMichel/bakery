@@ -98,6 +98,7 @@ export const OurStory = props => {
                                     20
                                   )}
                                   dateFormat="MMMM d, yyyy h:mm aa"
+                                  readOnly
                                 />
                               </div>
                               {!clicked ? (

@@ -762,6 +762,11 @@ nav a {
 .reservation-button {
   flex: 1;
 }
+@media screen and (max-width: 1093px) {
+  .reservation-button {
+    width: 200px;
+  }
+}
 
 input {
   font-family: "Open Sans" sans-serif;
@@ -782,6 +787,11 @@ input {
   input {
     float: none;
     border: 1px solid #000;
+  }
+}
+@media screen and (max-width: 1093px) {
+  input {
+    width: 200px;
   }
 }
 
@@ -1003,6 +1013,11 @@ input {
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 1094px) {
+  #Contact .get-in-touch {
+    margin-bottom: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   #Contact {
     position: initial;
@@ -1024,6 +1039,15 @@ input {
   margin-bottom: 2.3rem;
 }
 @media only screen and (max-width: 768px) {
+  #Contact .box {
+    position: initial;
+    bottom: initial;
+    margin: initial;
+    left: initial;
+    transform: initial;
+  }
+}
+@media only screen and (max-width: 1094px) {
   #Contact .box {
     position: initial;
     bottom: initial;

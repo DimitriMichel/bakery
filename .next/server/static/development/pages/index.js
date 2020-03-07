@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1334,6 +1334,7 @@ const OurStory = props => {
     minTime: date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_3___default()(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_4___default()(new Date(), 0), 17),
     maxTime: date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_3___default()(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_4___default()(new Date(), 400), 20),
     dateFormat: "MMMM d, yyyy h:mm aa",
+    readOnly: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 88
@@ -1343,7 +1344,7 @@ const OurStory = props => {
     className: "reservation-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: undefined
   }, __jsx("a", {
@@ -1351,14 +1352,14 @@ const OurStory = props => {
     className: "res-btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 106
     },
     __self: undefined
   }, "Reserve")) : __jsx("div", {
     className: "reservation-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 109
     },
     __self: undefined
   }, __jsx("a", {
@@ -1366,27 +1367,27 @@ const OurStory = props => {
     className: "res-btn confirmed",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: undefined
   }, "Reserved")))) : __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 116
     },
     __self: undefined
   }, " ")))))), __jsx("div", {
     className: "col-md-6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: undefined
   }, __jsx("div", {
     className: "video-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: undefined
   }))))));
@@ -1891,7 +1892,7 @@ const xAxisVariantsSlower = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

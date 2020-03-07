@@ -1237,7 +1237,7 @@ var OurStory = function OurStory(props) {
       },
       __self: this
     }, __jsx("div", {
-      className: "datpicker",
+      className: "datepicker",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 87
@@ -1250,9 +1250,9 @@ var OurStory = function OurStory(props) {
       },
       showTimeSelect: true,
       minTime: Object(date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_5__["default"])(new Date(), 0), 17),
-      maxTime: Object(date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_5__["default"])(new Date(), 400), 20),
+      maxTime: Object(date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_4__["default"])(Object(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_5__["default"])(new Date(), 250), 20),
+      timeCaption: "time",
       dateFormat: "MMMM d, yyyy h:mm aa",
-      readOnly: true,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 88
@@ -1262,7 +1262,7 @@ var OurStory = function OurStory(props) {
       className: "reservation-button",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 99
       },
       __self: this
     }, __jsx("a", {
@@ -1272,14 +1272,14 @@ var OurStory = function OurStory(props) {
       className: "res-btn",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106
+        lineNumber: 100
       },
       __self: this
     }, "Reserve")) : __jsx("div", {
       className: "reservation-button",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 103
       },
       __self: this
     }, __jsx("a", {
@@ -1289,13 +1289,13 @@ var OurStory = function OurStory(props) {
       className: "res-btn confirmed",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110
+        lineNumber: 104
       },
       __self: this
     }, "Reserved")))) : __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116
+        lineNumber: 110
       },
       __self: this
     }, " ")));
@@ -1303,14 +1303,14 @@ var OurStory = function OurStory(props) {
     className: "col-md-6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 119
     },
     __self: this
   }, __jsx("div", {
     className: "video-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 120
     },
     __self: this
   }))))));

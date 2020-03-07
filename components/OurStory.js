@@ -84,21 +84,15 @@ export const OurStory = props => {
                               <strong>Michael Harding</strong> (Master Baker)
                             </div>
                             <div className="reservation">
-                              <div className="datpicker">
+                              <div className="datepicker">
                                 <DatePicker
-                                  selected={startDate}
-                                  onChange={date => setStartDate(date)}
-                                  showTimeSelect
-                                  minTime={setHours(
-                                    setMinutes(new Date(), 0),
-                                    17
-                                  )}
-                                  maxTime={setHours(
-                                    setMinutes(new Date(), 400),
-                                    20
-                                  )}
-                                  dateFormat="MMMM d, yyyy h:mm aa"
-                                  readOnly
+                                    selected={startDate}
+                                    onChange={date => setStartDate(date)}
+                                    showTimeSelect
+                                    minTime={setHours(setMinutes(new Date(), 0), 17)}
+                                    maxTime={setHours(setMinutes(new Date(), 250), 20)}
+                                    timeCaption="time"
+                                    dateFormat="MMMM d, yyyy h:mm aa"
                                 />
                               </div>
                               {!clicked ? (

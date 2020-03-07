@@ -1321,7 +1321,7 @@ const OurStory = props => {
     },
     __self: undefined
   }, __jsx("div", {
-    className: "datpicker",
+    className: "datepicker",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
@@ -1332,9 +1332,9 @@ const OurStory = props => {
     onChange: date => setStartDate(date),
     showTimeSelect: true,
     minTime: date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_3___default()(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_4___default()(new Date(), 0), 17),
-    maxTime: date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_3___default()(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_4___default()(new Date(), 400), 20),
+    maxTime: date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_3___default()(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_4___default()(new Date(), 250), 20),
+    timeCaption: "time",
     dateFormat: "MMMM d, yyyy h:mm aa",
-    readOnly: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 88
@@ -1344,7 +1344,7 @@ const OurStory = props => {
     className: "reservation-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 99
     },
     __self: undefined
   }, __jsx("a", {
@@ -1352,14 +1352,14 @@ const OurStory = props => {
     className: "res-btn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 100
     },
     __self: undefined
   }, "Reserve")) : __jsx("div", {
     className: "reservation-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 103
     },
     __self: undefined
   }, __jsx("a", {
@@ -1367,27 +1367,27 @@ const OurStory = props => {
     className: "res-btn confirmed",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 104
     },
     __self: undefined
   }, "Reserved")))) : __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 110
     },
     __self: undefined
   }, " ")))))), __jsx("div", {
     className: "col-md-6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 119
     },
     __self: undefined
   }, __jsx("div", {
     className: "video-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 120
     },
     __self: undefined
   }))))));

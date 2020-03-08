@@ -767,6 +767,11 @@ nav a {
     width: 200px;
   }
 }
+@media screen and (max-width: 770px) {
+  .reservation-button {
+    width: 100%;
+  }
+}
 
 input {
   font-family: "Open Sans" sans-serif;
@@ -808,6 +813,11 @@ input {
   text-transform: uppercase;
   border-radius: 4px;
   margin: 0.5rem 0.5rem 60px;
+}
+@media screen and (max-width: 1093px) {
+  .res-btn {
+    width: 200px;
+  }
 }
 
 .confirmed {

@@ -477,6 +477,9 @@ nav {
   @media screen and (max-width: 1093px) {
     .reservation-button {
       width: 200px; } }
+  @media screen and (max-width: 770px) {
+    .reservation-button {
+      width: 100%; } }
 
 input {
   font-family: "Open Sans" sans-serif;
@@ -513,6 +516,9 @@ input {
   text-transform: uppercase;
   border-radius: 4px;
   margin: .5rem .5rem 60px; }
+  @media screen and (max-width: 1093px) {
+    .res-btn {
+      width: 200px; } }
 
 .confirmed {
   background-color: #21A179;
